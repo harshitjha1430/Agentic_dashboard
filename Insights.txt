@@ -1,0 +1,7 @@
+Insights from Agentic Dashboard
+
+Engagement is increasing – Active Builders have grown from 400 to 2,100 over 8 weeks, with forecasted growth to over 3,000 by Week 10 (R² = 0.978).
+
+Publishing time is decreasing – Average time to publish has dropped from 45 to 25 minutes, indicating smoother user experience (R² = 0.96).
+
+Creativity is rising – % of apps with custom aesthetics has steadily increased to 86%, aligning with the platform's “vibe coding” vision.

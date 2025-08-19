@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CustomReferenceLineTooltips />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='emergent_dashboard_data (agentic_platform_dashboard_data.csv)' inline='true' name='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='agentic_platform_dashboard_data.csv' name='excel-direct.0kw2liv0kgoenk10tjxu11wqu3uk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/Documents/agentic_platform_dashboard_data.csv.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0kw2liv0kgoenk10tjxu11wqu3uk' name='emergent_dashboard_data' table='[emergent_dashboard_data$]' type='table'>
+          <columns gridOrigin='A1:D9:no:A1:D9:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Week' ordinal='0' />
+            <column datatype='integer' name='Active Builders' ordinal='1' />
+            <column datatype='integer' name='Avg Time to Publish (min)' ordinal='2' />
+            <column datatype='integer' name='% of Apps with Custom Aesthetics' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[emergent_dashboard_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D9:no:A1:D9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Week]</local-name>
+            <parent-name>[emergent_dashboard_data]</parent-name>
+            <remote-alias>Week</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active Builders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active Builders]</local-name>
+            <parent-name>[emergent_dashboard_data]</parent-name>
+            <remote-alias>Active Builders</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Time to Publish (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg Time to Publish (min)]</local-name>
+            <parent-name>[emergent_dashboard_data]</parent-name>
+            <remote-alias>Avg Time to Publish (min)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of Apps with Custom Aesthetics</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% of Apps with Custom Aesthetics]</local-name>
+            <parent-name>[emergent_dashboard_data]</parent-name>
+            <remote-alias>% of Apps with Custom Aesthetics</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+      <column caption='emergent_dashboard_data' datatype='table' name='[__tableau_internal_object_id__].[emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#ff0000'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='emergent_dashboard_data' id='emergent!dashboard!data_AF8F5642D02742B48AA1E745D60F73CA'>
+            <properties context=''>
+              <relation connection='excel-direct.0kw2liv0kgoenk10tjxu11wqu3uk' name='emergent_dashboard_data' table='[emergent_dashboard_data$]' type='table'>
+                <columns gridOrigin='A1:D9:no:A1:D9:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Week' ordinal='0' />
+                  <column datatype='integer' name='Active Builders' ordinal='1' />
+                  <column datatype='integer' name='Avg Time to Publish (min)' ordinal='2' />
+                  <column datatype='integer' name='% of Apps with Custom Aesthetics' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>NO. OF ACTIVE BUILDERS PER WEEK</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emergent_dashboard_data (agentic_platform_dashboard_data.csv)' name='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk'>
+            <column datatype='integer' name='[Active Builders]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+            <column-instance column='[Active Builders]' derivation='Sum' forecast-column-base='[sum:Active Builders:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Active Builders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Active Builders]' derivation='Sum' forecast-column-base='[sum:Active Builders:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Active Builders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Active Builders]' derivation='Sum' forecast-column-base='[sum:Active Builders:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Active Builders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Week]' derivation='None' name='[none:Week:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Active Builders]' derivation='Sum' name='[sum:Active Builders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]' field-type='quantitative' max='14' min='1' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]' />
+              <color column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='true' exclude-intercept='false' fit='linear'>
+              <excluded-factors>
+                <column>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Week:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Active Builders:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Active Builders:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.2430939674377441' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</rows>
+        <cols>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIL:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIU:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>1600</value>
+                <value>&quot;Actual&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIL:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIU:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                  <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>1635</value>
+                <value>4560</value>
+                <value>3098</value>
+                <value>&quot;Estimate&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Forecast indicator: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Week: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Active Builders: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIL:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIU:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>9</value>
+                    <value>1422</value>
+                    <value>3781</value>
+                    <value>2602</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-143' y='-94' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Forecast indicator: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Week: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Active Builders: </run>
+              <run bold='true'><![CDATA[<[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIL:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fPIU:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[fVal:sum:Active Builders:qk]</field>
+                      <field>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>10</value>
+                    <value>1635</value>
+                    <value>4560</value>
+                    <value>3098</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='81' y='342' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-zero' ignore-last='0' model-type='auto-season' range-periods='None' range-size='2' range-type='end-of' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{2EC1F305-CEF8-497E-9949-F471BEC5C28F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>AVERAGE TIME TO PUBLISH APP(MIN) PER WEEK</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emergent_dashboard_data (agentic_platform_dashboard_data.csv)' name='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk'>
+            <column datatype='integer' name='[Avg Time to Publish (min)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+            <column-instance column='[Week]' derivation='None' name='[none:Week:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg Time to Publish (min)]' derivation='Sum' name='[sum:Avg Time to Publish (min):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' field-type='quantitative' max='55' min='0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]' field-type='quantitative' max='12' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='width' field='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' value='60' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='stroke-color' id='refline0' value='#f28e2b' />
+            <format attr='fill-color' id='refline0' value='#efebe8' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <reference-line axis-column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='automatic' paired-id='refline1' scope='per-pane' symmetric='false' tooltip='MINIMUM TIME TAKEN TO PUBLISH APPS:&lt;Value&gt;' tooltip-type='custom' value-column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' z-order='1' />
+            <reference-line axis-column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' paired-id='refline0' probability='95' scope='per-pane' symmetric='false' tooltip='AVERAGE TIME TAKEN TO PUBLISH APPS:&lt;Value&gt;' tooltip-type='custom' value-column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:Avg Time to Publish (min):qk]</rows>
+        <cols>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</cols>
+      </table>
+      <simple-id uuid='{C3E02CD8-DA99-495F-80C6-A3A281DDD307}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>% OF APPS WITH CUSTOM AESTHETICS PER WEEK</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emergent_dashboard_data (agentic_platform_dashboard_data.csv)' name='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01s8e4d0pen2vr1c3o1dr0x4ltnk'>
+            <column datatype='integer' name='[% of Apps with Custom Aesthetics]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+            <column-instance column='[Week]' derivation='None' name='[none:Week:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[% of Apps with Custom Aesthetics]' derivation='Sum' name='[sum:% of Apps with Custom Aesthetics:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:% of Apps with Custom Aesthetics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[sum:% of Apps with Custom Aesthetics:qk]</rows>
+        <cols>[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Week:qk]</cols>
+      </table>
+      <simple-id uuid='{E287800E-F419-4219-AAD6-FEF52828C46B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>AGENTIC PLATFORM PERFORMANCE INSIGHTS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98098' id='13' param='vert' type-v2='layout-flow' w='98860' x='570' y='951'>
+            <zone h='5826' id='14' type-v2='title' w='98860' x='570' y='951'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92272' id='7' param='horz' type-v2='layout-flow' w='98860' x='570' y='6777'>
+              <zone h='92272' id='5' type-v2='layout-basic' w='88390' x='570' y='6777'>
+                <zone h='92272' id='3' name='Sheet 2' w='37951' x='51009' y='6777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92272' id='9' name='Sheet 3' w='26446' x='24563' y='6777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92272' id='10' name='Sheet 4' w='23993' x='570' y='6777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='147' h='92272' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='10470' x='88960' y='6777'>
+                <zone h='8561' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]' type-v2='color' w='10470' x='88960' y='6777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>AGENTIC PLATFORM PERFORMANCE INSIGHTS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='17' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone h='5758' id='14' type-v2='title' w='99034' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92362' id='10' is-fixed='true' name='Sheet 4' w='24501' x='483' y='6698'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92362' id='9' is-fixed='true' name='Sheet 3' w='26976' x='24984' y='6698'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92362' id='3' is-fixed='true' name='Sheet 2' w='38686' x='51960' y='6698'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8461' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]' type-v2='color' w='8871' x='90646' y='6698'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DBF4B4F9-2DD5-470E-A446-15F92A686770}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01s8e4d0pen2vr1c3o1dr0x4ltnk].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0241268F-A309-488A-8672-34D6F8E63F44}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FAE87307-1484-4A53-8F2E-8A63EE59D2F7}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EA1A232B-035A-49A0-9DA4-00B77B8FF87A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{2AEF5B35-7E56-4A25-BEED-A707F11DFA30}' />
+    </window>
+  </windows>
+</workbook>

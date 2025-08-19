@@ -1,0 +1,17 @@
+
+Cover Note: Agentic Dashboard Submission
+
+This dashboard presents a mock analysis of key performance indicators (KPIs) for the Agentic Platform — an AI-powered, no-code app builder aimed at enabling non-developers to create functional and aesthetic apps effortlessly. The goal is to demonstrate momentum, usability, and creative engagement via three core metrics:
+
+1)Active Builders (AB): Indicates core user engagement and growing adoption of the platform.
+2)Average Time to Publish: Measures the ease of use and user flow — lower times suggest a smoother experience.
+3)% of Apps with Custom Aesthetics: Reflects user creativity and how well the platform supports the "vibe coding" vision.
+
+I used line charts with trend lines and forecasts for Active Builders and Publish Time to visualize growth and usability improvements over time. A reference band was added to the time chart to highlight the ideal publishing window. The aesthetic usage metric is displayed via a bar chart, showing increased creative expression over time.
+
+Assumptions made:
+1)Data is fabricated for illustrative purposes.
+2)Trends are assumed to continue as adoption increases.
+3)The ideal publish time range is derived from minimum and average values in the dataset.
+
+This dashboard and insights aim to support a data-driven pitch for the Agentic Platform’s traction and user value.
